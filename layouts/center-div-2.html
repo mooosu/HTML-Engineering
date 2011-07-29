@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ 
+<head> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+<title>CSS Centering: Negative Margin</title> 
+<style type="text/css" media="screen"> 
+@import "general.css"; /* Mostly just text styling. */
+ 
+body {margin:0px; padding:0px;} /* Need to set body margin and padding to get consistency between browsers. */
+ 
+#Content {
+	position:absolute;
+	left:50%;
+	width:500px;
+	margin-top:50px;
+	margin-left:-266px;
+	text-align:left;
+	padding:15px;
+	border:1px dashed #333;
+	background-color:#eee;
+	}
+</style> 
+</head> 
+ 
+<body> 
+ 
+<div id="Content"> 
+	<h1>Centering: Negative Margin</h1> 
+	<p>This box is horizontally centered using a technique proposed to me by Simon Coggins. First, the box's left edge is positioned at the horizontal center of the page using "position:absolute; left:50%;". Then, the box's left margin is set to the opposite of half the box's width using "margin-left:-266px;".</p> 
+<pre> 
+body {margin:0px; padding:0px;}
+ 
+#Content {
+	position:absolute;
+	left:50%;
+	width:500px;
+	margin-top:50px;
+	margin-left:-266px;
+	padding:15px;
+	border:1px dashed #333;
+	background-color:#eee;
+	}
+</pre> 
+</div> 
+ 
+<!-- BlueRobot was here. --> 
+ 
+</body> 
+</html>
